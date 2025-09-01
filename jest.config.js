@@ -5,5 +5,4 @@ module.exports = {
     'server/**/*.js',
     '!server/smoke-test.js',
   ],
-  setupFilesAfterEnv: ['<rootDir>/server/test/setup.js'],
 };
