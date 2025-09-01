@@ -1,0 +1,344 @@
+<moral_dilemma_templates>
+  <core_principle>
+    True moral dilemmas have no right answers - only choices with different costs and consequences.
+    The most powerful dilemmas force players to sacrifice something they value deeply.
+  </core_principle>
+
+  <dilemma_structures>
+    <structure name="sacrifice_hierarchy">
+      <template>
+        <prompt>You must choose what to sacrifice: Person vs Principle vs Society</prompt>
+        <options>
+          <option>Sacrifice one person to save many (utilitarian calculus)</option>
+          <option>Break your principles to protect someone you love</option>
+          <option>Defy societal rules to achieve justice</option>
+        </options>
+        <complexity>One choice always requires betraying something sacred to you</complexity>
+      </template>
+    </structure>
+
+    <structure name="damned_if_you_do">
+      <template>
+        <prompt>Two seemingly good paths each lead to harm you could prevent</prompt>
+        <options>
+          <option>Choose the path causing immediate harm to achieve long-term good</option>
+          <option>Choose temporary kindness leading to greater future suffering</option>
+        </options>
+        <complexity>No matter your choice, you bear responsibility for preventable harm</complexity>
+      </template>
+    </structure>
+
+    <structure name="impure_motives">
+      <template>
+        <prompt>Your supposed altruism actually serves hidden self-interest</prompt>
+        <options>
+          <option>Admit your true motives and lose others' trust</option>
+          <option>Maintain helpful facade while central relationship suffers</option>
+        </options>
+        <complexity>What starts as genuine care becomes contaminated by your needs</complexity>
+      </template>
+    </structure>
+  </dilemma_structures>
+
+  <thematic_categories>
+    <category name="love_and_loyalty">
+      <dilemma_template>
+        <scenario>Your partner confessed to infidelity, destroying your trust</scenario>
+        <choice_a>Forgive immediately to preserve family stability</choice_a>
+        <choice_b>Divorce to protect children's emotional health long-term</choice_b>
+        <consequences>
+          <a_consequence>Family preserved but trust permanently damaged, marriage becomes prison</a_consequence>
+          <b_consequence>Children suffer immediate trauma, financial hardship compounds loss</b_consequence>
+        </consequences>
+        <moral_hook>Is stability through compromise better than temporary pain leading to eventual healing?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Parent with terminal illness asks for life-ending assistance</scenario>
+        <choice_a>Help them end suffering, breaking legal and moral boundaries</choice_a>
+        <choice_b>Watch them suffer until natural death, maintaining pure conscience</choice_b>
+        <consequences>
+          <a_consequence>Relief from suffering but lifelong guilt of causing death, legal consequences</a_consequence>
+          <b_consequence>Extended suffering witnessing, regret of not having mercy when possible</b_consequence>
+        </consequences>
+        <moral_hook>Does love justify breaking sacred boundaries for mercy?</moral_hook>
+      </dilemma_template>
+    </category>
+
+    <category name="justice_and_compromise">
+      <dilemma_template>
+        <scenario>Investigator discovers close friend committed serious crime but for sympathetic reasons</scenario>
+        <choice_a>Report them, destroying your relationship and their future</choice_a>
+        <choice_b>Cover up, becoming complicit in injustice</choice_b>
+        <consequences>
+          <a_consequence>Justice served, friendship destroyed, question fairness of justice system</a_consequence>
+          <b_consequence>Friend protected, guilt over enabling crime, damage to personal integrity</b_consequence>
+        </consequences>
+        <moral_hook>Can loyalty to individuals justify undermining society's justice?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Business owner discovers employees stealing but they desperately need money</scenario>
+        <choice_a>Fire them, risking their families' starvation</choice_a>
+        <choice_b>Ignore theft, damaging business and honest employees' trust</choice_b>
+        <consequences>
+          <a_consequence>Business survives, guilty over causing financial ruin to families</a_consequence>
+          <b_consequence>Employees helped, business potentially fails, hurt honest workers</b_consequence>
+        </consequences>
+        <moral_hook>Does compassion for the desperate justify unfairness to the honest?</moral_hook>
+      </dilemma_template>
+    </category>
+
+    <category name="survival_and_humanity">
+      <dilemma_template>
+        <scenario>In post-apocalyptic world, group has one remaining food source for children</scenario>
+        <choice_a>Share equally among all, risking all children's deaths</choice_a>
+        <choice_b>Give to strongest children, sacrificing weaker ones more efficiently</choice_b>
+        <consequences>
+          <a_consequence>Equitable death, death of all children seems preventable</a_consequence>
+          <b_consequence>Some survive, but at cost of direct sacrifice of weaker members</b_consequence>
+        </consequences>
+        <moral_hook>When survival demands it, is human compassion still possible?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Hiding from violent pursuers who will kill everyone if found</scenario>
+        <choice_a>Sacrifice yourself as distraction to save others</choice_a>
+        <choice_b>Use innocent third party as diversion, saving main group</choice_b>
+        <consequences>
+          <a_consequence>Personal death, heroic but leaves survivors traumatized</a_consequence>
+          <b_consequence>Group survives but guilt over sacrificing innocent person</b_consequence>
+        </consequences>
+        <moral_hook>Does group survival justify sacrificing the innocent?</moral_hook>
+      </dilemma_template>
+    </category>
+
+    <category name="success_and_integrity">
+      <dilemma_template>
+        <scenario>Career-defining opportunity requires betraying mentor who helped you</scenario>
+        <choice_a>Take opportunity, ending mentoring relationship</choice_a>
+        <choice_b>Decline, watching career stall while keeping moral integrity</choice_b>
+        <consequences>
+          <a_consequence>Career advances rapidly, permanent strain with mentor, question trust in relationships</a_consequence>
+          <b_consequence>Career stagnation, maintain self-respect but resent sacrifices</b_consequence>
+        </consequences>
+        <moral_hook>Can ambition be pursued without sacrificing relationships that built you?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Being pressured to lie about product safety to protect company profits</scenario>
+        <choice_a>Tell truth, risk company collapse and employees' jobs</choice_a>
+        <choice_b>Lie to protect company, enable ongoing harm to customers</choice_b>
+        <consequences>
+          <a_consequence>Numerous jobs lost, personal hardship, potential lawsuits</a_consequence>
+          <b_consequence>Company survives, employees safe, guilt over enabling harm</b_consequence>
+        </consequences>
+        <moral_hook>Does protecting employees justify harming customers?</moral_hook>
+      </dilemma_template>
+    </category>
+
+    <category name="identity_and_belonging">
+      <dilemma_template>
+        <scenario>Family wants you to marry against your wishes to honor cultural tradition</scenario>
+        <choice_a>Marry as expected, preserving family ties and identity</choice_a>
+        <choice_b>Refuse, maintaining autonomy at cost of family rejection</choice_b>
+        <consequences>
+          <a_consequence>Cultural continuity, personal unhappiness and potential resentment</a_consequence>
+          <b_consequence>Personal authenticity, family fragmentation and identity questions</b_consequence>
+        </consequences>
+        <moral_hook>Does loyalty to culture outweigh personal right to authentic choices?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Friend group excludes those different from majority culture</scenario>
+        <choice_a>Leave group to maintain inclusive principles</choice_a>
+        <choice_b>Stay silent to preserve important friendships</choice_b>
+        <consequences>
+          <a_consequence>Loneliness from isolation, maintain moral integrity</a_consequence>
+          <b_consequence>Sustain social connections, complicit in exclusion</b_consequence>
+        </consequences>
+        <moral_hook>Can you maintain friendships while opposing their harmful dynamics?</moral_hook>
+      </dilemma_template>
+    </category>
+
+    <category name="justice_and_incarceration">
+      <dilemma_template>
+        <scenario>Caught committing a non-violent crime (theft, fraud) with family members relying on you financially</scenario>
+        <choice_a>Plead guilty and accept prison time to set good example for children</choice_a>
+        <choice_b>Fight charges, potentially acquittal but ruin legal costs and family stress</choice_b>
+        <consequences>
+          <a_consequence>Time served building discipline, family financial hardship, emotional toll on dependents</a_consequence>
+          <b_consequence>Possible freedom but prolonged uncertainty, legal trauma, relationship strain</b_consequence>
+        </consequences>
+        <moral_hook>Is accepting punishment for non-violent crime worth cost to vulnerable family members?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Partner commits serious crime, evidence suggests conspiracy involvement</scenario>
+        <choice_a>Provide alibi, maintaining relationship but becoming accessory after fact</choice_a>
+        <choice_b>Report suspicions to authorities, losing partner but maintaining innocence</choice_b>
+        <consequences>
+          <a_consequence>Partner protection, guilt of complicity, potential future legal exposure, romantic continuation</a_consequence>
+          <b_consequence>Personal integrity preserved, emotional devastation of breakup, possible loneliness</b_consequence>
+        </consequences>
+        <moral_hook>Does romantic devotion justify breaking personal ethical boundaries?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Colleagues engaged in corporate fraud, discovered accidentally after participating unknowingly</scenario>
+        <choice_a>Report immediately, ending career but preventing greater harm to investors</choice_a>
+        <choice_b>Quit quietly and let others handle, preserving professional future but enabling continued fraud</choice_b>
+        <consequences>
+          <a_consequence>Career destroyed, whistleblower status, personal financial ruin, pride in moral action</a_consequence>
+          <b_consequence>Career continues, personal gain, guilt over inaction, watching harm continue</b_consequence>
+        </consequences>
+        <moral_hook>Is sacrificing career stability worth preventing harm you can't personally stop?</moral_hook>
+      </dilemma_template>
+    </category>
+
+    <category name="successful_life_challenges">
+      <positive_dilemma_structure>
+        <description>Even successful lives face meaningful choices and challenges</description>
+        <purpose>Show that wealth and success create their own moral and emotional dilemmas</purpose>
+      </positive_dilemma_structure>
+
+      <dilemma_template>
+        <scenario>Successful career but overwork threatens marriage and children's childhood</scenario>
+        <choice_a>Continue ambitious work path for financial security</choice_a>
+        <choice_b>Cut back work to prioritize family relationships</choice_b>
+        <consequences>
+          <a_consequence>Greater wealth, potential divorce and children who feel neglected</a_consequence>
+          <b_consequence>Stronger family bonds, delayed career progress and financial anxiety</b_consequence>
+        </consequences>
+        <moral_hook>Does providing material abundance compensate for emotional absence?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Marie abundant wealth but see community members struggling</scenario>
+        <choice_a>Use wealth charitably to create systemic change</choice_a>
+        <choice_b>Invest wealth in business to compound personal success</choice_b>
+        <consequences>
+          <a_consequence>Community transformation, slower personal wealth growth</a_consequence>
+          <b_consequence>Rapid personal gain, thriving business, community stagnation</b_consequence>
+        </consequences>
+        <moral_hook>Can benevolence scale or is personal achievement ultimately more worthwhile?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Achieve dream career but risk health through demanding work life</scenario>
+        <choice_a>Push through exhaustion for career advancement</choice_a>
+        <choice_b>Prioritize health and family over peak professional opportunities</choice_b>
+        <consequences>
+          <a_consequence>Professional pinnacle, health complications, strained relationships</a_consequence>
+          <b_consequence>Good health and family harmony, slightly truncated career</b_consequence>
+        </consequences>
+        <moral_hook>Is realizing professional potential worth deferred health costs?</moral_hook>
+      </dilemma_template>
+    </category>
+
+    <category name="everyday_balance_decisions">
+      <routine_dilemmas>
+        <description>Small daily choices that shape life trajectory without dramatic consequences</description>
+        <focus>Maintain unpredictability while showing how everyday decisions compound</focus>
+      </routine_dilemmas>
+
+      <dilemma_template>
+        <scenario>Choose between night out drinking with friends or family dinner</scenario>
+        <choice_a>Social night out for networking and relaxation</choice_a>
+        <choice_b>Family dinner for relationship maintenance</choice_b>
+        <consequences>
+          <a_consequence>Enhanced social life, minor hangover, warmer friendships</a_consequence>
+          <b_consequence>Stronger family relationships, missed casual professional connection</b_consequence>
+        </consequences>
+        <moral_hook>How do you balance immediate pleasure with long-term relationship health?</moral_hook>
+      </dilemma_template>
+
+      <dilemma_template>
+        <scenario>Weeknight choice between hitting gym or watching TV with family</scenario>
+        <choice_a>Exercise session for physical health</choice_a>
+        <choice_b>Quality screen time building emotional connections</choice_b>
+        <consequences>
+          <a_consequence>Better health, stronger body, slight social isolation</a_consequence>
+          <b_consequence>Tighter family bonds, shared memories, fitness maintenance</b_consequence>
+        </consequences>
+        <moral_hook>Does physical well-being outweigh nurturing relationships?</moral_hook>
+      </dilemma_template>
+    </category>
+  </thematic_categories>
+
+  <dilemma_design_principles>
+    <principle name="symmetrical_consequences">
+      <rule>Ensure all choices have roughly equal emotional weight and validity</rule>
+      <reason>Players should feel genuine torment over the decision</reason>
+    </principle>
+
+    <principle name="ripple_effects">
+      <rule>Choices should have cascading effects on multiple relationships and situations</rule>
+      <reason>Creates organic, unpredictable narratives rather than linear consequences</reason>
+    </principle>
+
+    <principle name="personal_cost">
+      <rule>Something the player character deeply values should be at stake</rule>
+      <reason>Makes choices emotionally meaningful rather than strategically optimal</reason>
+    </principle>
+
+    <principle name="no_perfect_solution">
+      <rule>No choice should feel wholly right or satisfying afterward</rule>
+      <reason>Forces players to live with the authenticity of difficult choices</reason>
+    </principle>
+  </dilemma_design_principles>
+
+  <implementation_patterns>
+    <pattern name="escalating_commitments">
+      <description>Small compromises build to major dilemmas through gradual commitment</description>
+      <example>
+        <step1>Ignore minor injustice to keep job comfortable</step1>
+        <step2>Cover up colleague's mistake to protect promotion</step2>
+        <step3>Break confidence of friend to advance further</step3>
+        <climax>Discover corruption is widespread, face whistleblowing dilemma</climax>
+      </example>
+    </pattern>
+
+    <pattern name="interlocking_relationships">
+      <description>Dilemmas where personal relationships create conflicting obligations</description>
+      <example>
+        <conflict>Mentor needs help covering ethical lapse</conflict>
+        <conflict>Romantic partner benefits from corporate success</conflict>
+        <conflict>Family member needs money that only corrupt job can provide</conflict>
+        <climax>One action simultaneously helps and harms different loved ones</climax>
+      </example>
+    </pattern>
+
+    <pattern name="erosion_of_principles">
+      <description>Character's moral boundaries shift through situational pressure</description>
+      <example>
+        <initial>Strong belief in transparency and honesty</initial>
+        <pressure>Small deceptions needed to "protect others"</pressure>
+        <rationalization>"It was just this one time"</rationalization>
+        <crisis>Line crossed so many times that original principles no longer apply</crisis>
+      </example>
+    </pattern>
+  </implementation_patterns>
+
+  <player_engagement_strategies>
+    <strategy name="emotional_investment">
+      <approach>Build deep relationships with characters before presenting dilemmas</approach>
+      <benefit>Choices hurt more when they affect people you care about</benefit>
+    </strategy>
+
+    <strategy name="uncertain_information">
+      <approach>Provide incomplete information for decision-making</approach>
+      <benefit>Forces players to act on intuition and guess at full consequences</benefit>
+    </strategy>
+
+    <strategy name="delayed_consequences">
+      <approach>Dilemma impacts may take time to fully manifest</approach>
+      <benefit>Keeps players engaged in long-term moral repercussions</benefit>
+    </strategy>
+
+    <strategy name="personal_transformation">
+      <approach>Show how choices change the player character's personality and view of self</approach>
+      <benefit>Makes moral choices feel like they're shaping who the character becomes</benefit>
+    </strategy>
+  </player_engagement_strategies>
+</moral_dilemma_templates>

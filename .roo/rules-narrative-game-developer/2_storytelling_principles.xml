@@ -1,0 +1,153 @@
+<dark_narrative_principles>
+  <core_approach>
+    True life simulation requires randomization and unpredictability. Stories alternate between darkness and light, success and struggle, with no predetermined emotional tone. Everyday mundane activities coexist with profound moral choices, creating authentic human experience rather than forced drama.
+  </core_approach>
+
+  <randomization_principles>
+    <principle name="unpredictable_trajectories">
+      <description>No story outcome predetermined - success, struggle, or balance emerge naturally</description>
+      <implementation>
+        Randomize starting conditions (socioeconomic status, family background, health history)
+        Allow unpredictable life events (career opportunities, accidents, relationships, health issues)
+        Enable player choices to pivot between light and dark paths
+      </implementation>
+    </principle>
+
+    <principle name="balanced_intensity">
+      <description>Mix profound emotional moments with mundane daily routines</description>
+      <implementation>
+        Include both earth-shattering choices and everyday decisions
+        Balance darkness with moments of genuine human connection and joy
+        Show that "successful" lives contain disappointment while "struggling" lives have hope
+      </implementation>
+    </principle>
+  </randomization_principles>
+
+  <emotional_authenticity>
+    <principle name="earned_emotion">
+      <description>Dark moments become powerful only when they've earned emotional weight through authentic character development</description>
+      <implementation>
+        Build characters through lived experience, not expository data dumps
+        Show, don't tell, the formation of beliefs and trauma
+        Let consequences emerge organically from established traits
+      </implementation>
+      <anti_pattern>Bombshell revelations that contradict established character behavior</anti_pattern>
+    </principle>
+
+    <principle name="moral_complexity">
+      <description>Human morality exists on a spectrum, not in binary choices between "good" and "evil"</description>
+      <implementation>
+        Show characters doing "bad" things for understandable reasons
+        Allow players to make choices that feel right in the moment but have devastating consequences
+        Create situations where multiple stakeholders have legitimate claims to being "the victim"
+      </implementation>
+      <anti_pattern>Moral choices where one option is clearly heroic and the other obviously villainous</anti_pattern>
+    </principle>
+  </emotional_authenticity>
+
+  <narrative_impact>
+    <principle name="authentic_consequences">
+      <description>Choices should lead to genuine, often painful, narrative outcomes that reflect human reality</description>
+      <implementation>
+        Show how "small" betrayals create lasting rifts in relationships
+        Demonstrate how moral compromises erode personal integrity over time
+        Illustrate how avoidance of hard choices often leads to greater suffering
+      </implementation>
+      <example>
+        A character who choses financial security over friendship doesn't just lose a friend - they lose their sense of self-worth, becoming isolated in their success
+      </example>
+    </principle>
+
+    <principle name="emotional_resonance">
+      <description>Create stories that linger in players' minds by connecting with universal human experiences</description>
+      <implementation>
+        Build narratives around primal fears: abandonment, failure, corruption of innocence
+        Explore the compromises we all make to survive in an imperfect world
+        Show the cost of denying our own humanity to achieve success or security
+      </implementation>
+      <anti_pattern>Disturbing elements that exist primarily to be shocking without serving character or plot</anti_pattern>
+    </principle>
+  </narrative_impact>
+
+  <adult_themes_handling>
+    <principle name="earned_maturity">
+      <description>Adult content should enhance narrative depth, not replace genuine emotional development</description>
+      <implementation>
+        Use drug use to show escape from trauma, not glamorous rebellion
+        Depict violence as devastating and human-costly, not action-movie cool
+        Show betrayal as heartbreaking loss of trust, not simple villainy
+        Illustrate theft and crime as desperate human choices made in impossible circumstances
+      </implementation>
+      <warning>Avoid sensationalism that turns serious human struggles into entertainment clichés</warning>
+    </principle>
+
+    <principle name="redemptive_arcs">
+      <description>Not every story needs a happy ending, but every story needs meaning and human connection</description>
+      <implementation>
+        Show small moments of grace, understanding, or personal growth amid the darkness
+        Allow characters to find meaning through suffering, even if they don't "win"
+        Demonstrate that being human - with all its flaws and compromises - has inherent value
+      </implementation>
+      <balance_rule>Dark themes without hope become nihilistic; hope without darkness becomes shallow</balance_rule>
+    </principle>
+  </adult_themes_handling>
+
+  <dark_storytelling_techniques>
+    <technique name="perspective_shifting">
+      <method>Show the same events through different characters' eyes, revealing how perception creates reality</method>
+      <power>This undermines players' certainty about "truth" and "righteousness"</power>
+    </technique>
+
+    <technique name="slow_burn_corruption">
+      <method>Show characters making small compromises that accumulate into major personal transformations</method>
+      <power>This creates more profound dread than sudden monstrosity</power>
+    </technique>
+
+    <technique name="earned_horror">
+      <method>Build tension through authentic character experiences rather than jump scares</method>
+      <power>This creates lasting psychological impact, not momentary fright</power>
+    </technique>
+
+    <technique name="moral_ambiguity">
+      <method>Create scenarios where well-intentioned actions hurt innocent people</method>
+      <power>This forces players to confront their own capacity for causing harm</power>
+    </technique>
+  </dark_storytelling_techniques>
+
+  <character_driven_narrative>
+    <principle name="lived_experience">
+      <requirement>Characters should feel like they've lived full lives before the story began</requirement>
+      <implementation>
+        Give each character: formative childhood experiences, key relationships, core values, and emotional scars
+        Show how their past influences their present choices in subtle, authentic ways
+        Allow characters to change organically through interactions, not suddenly for plot convenience
+      </implementation>
+    </principle>
+
+    <principle name="relational_depth">
+      <requirement>Relationships should be complex webs of affection, obligation, resentment, and need</requirement>
+      <implementation>
+        Show how family ties can be both life's greatest comfort and deepest source of pain
+        Demonstrate how friendships form, fracture, and sometimes heal in unexpected ways
+        Illustrate how romantic love can inspire both our greatest nobility and worst compromises
+      </implementation>
+    </principle>
+  </character_driven_narrative>
+
+  <anti_patterns>
+    <pattern name="shock_without_substance">
+      <description>Dark elements included merely to be disturbing without serving the story</description>
+      <solution>Every uncomfortable moment should reveal character truth or advance plot understanding</solution>
+    </pattern>
+
+    <pattern name="villainous_caricature">
+      <description>Antagonists who are evil for evil's sake without any relatable human motivation</description>
+      <solution>Even the most destructive characters should be understandable as flawed humans</solution>
+    </pattern>
+
+    <pattern name="easy_redemption">
+      <description>Complex moral failures resolved with simple apologies or heroic acts</description>
+      <solution>Some damage is permanent; some betrayals create rifts that can never fully heal</solution>
+    </pattern>
+  </anti_patterns>
+</dark_narrative_principles>

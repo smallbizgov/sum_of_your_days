@@ -1,0 +1,122 @@
+<workflow_instructions>
+  <mode_overview>
+    🌑 Dark Narrative Guru Workflow - Creating deep, emotionally impactful narrative games
+    where player choices fundamentally alter story outcomes and character experiences.
+  </mode_overview>
+
+  <core_principles>
+    <principle>Every game becomes a personal experience - no forced scripts</principle>
+    <principle>Moral choices should be devastating, not clear-cut</principle>
+    <principle>Characters feel as real as people you've known in life</principle>
+    <principle>Dark themes require emotional authenticity, not gratuitous shock</principle>
+  </core_principles>
+
+  <initialization_steps>
+    <step number="1">
+      <action>Analyze the game concept through moral and emotional lenses</action>
+      <details>
+        Identify the central human dilemma or experience you want players to explore:
+        - What aspect of human nature or society will this game examine?
+        - What uncomfortable truths will players confront?
+        - How will player choices reflect their own moral compass?
+      </details>
+    </step>
+
+    <step number="2">
+      <action>Define the character perspectives and social contexts</action>
+      <tools>
+        <tool>codebase_search - Find existing character/component patterns</tool>
+        <tool>read_file - Examine current game structure</tool>
+        <tool>list_files - Understand project organization</tool>
+      </tools>
+    </step>
+  </initialization_steps>
+
+  <main_workflow>
+    <phase name="story_tone_randomization">
+      <description>Determine the overall life trajectory through randomization mechanics</description>
+      <randomized_outcomes>
+        <outcome>Successful life: Career advancement, meaningful relationships, financial security with moderate challenges</outcome>
+        <outcome>Struggle and redemption: Deep personal challenges with opportunity for growth or decline</outcome>
+        <outcome>Balanced existence: Everyday victories and setbacks, neither overwhelmingly positive nor negative</outcome>
+        <outcome>Mixed fortune: Periods of success interrupted by unexpected challenges</outcome>
+      </randomized_outcomes>
+    </phase>
+
+    <phase name="character_foundations">
+      <description>Build characters that feel authentically human with complex motivations, randomized backgrounds</description>
+      <steps>
+        <step>Randomly generate socioeconomic starting point (poor, middle class, wealthy)</step>
+        <step>Create detailed backstories with genuine emotional depth and varied life experiences</step>
+        <step>Define belief systems, traumas, and conflicting desires based on life trajectory</step>
+        <step>Establish relationships with real interpersonal dynamics through random encounters</step>
+      </steps>
+    </phase>
+
+    <phase name="moral_dilemmas">
+      <description>Craft choices that force players to question their values and humanity</description>
+      <steps>
+        <step>Identify scenarios with no "right" or "wrong" answer</step>
+        <step>Create consequences that ripple through the entire narrative</step>
+        <step>Ensure choices reflect authentic human moral complexity</step>
+      </steps>
+    </phase>
+
+    <phase name="narrative_implementation">
+      <description>Code the story mechanics that allow for true player agency</description>
+      <steps>
+        <step>Implement branching narrative paths based on character development</step>
+        <step>Add dynamic relationship changes based on player decisions</step>
+        <step>Create emotional feedback systems that reinforce story impact</step>
+        <step>Ensure adult themes are handled with sensitivity and power</step>
+      </steps>
+    </phase>
+
+    <phase name="emotional_authenticity">
+      <description>Test and refine the emotional impact of your narrative</description>
+      <steps>
+        <step>Verify characters feel real and choices matter</step>
+        <step>Ensure dark themes serve narrative depth, not shock value</step>
+        <step>Balance despair with moments of genuine hope or understanding</step>
+      </steps>
+    </phase>
+  </main_workflow>
+
+  <implementation_patterns>
+    <pattern name="dynamic_character_evolution">
+      <description>Characters change based on player actions, not predetermined paths</description>
+      <code_pattern>
+// Character state evolves organically
+const characterEvolution = {
+  trust_level: "variable",
+  moral_compass: "influenced_by_choices",
+  relationships: "dynamic_network",
+  personal_growth: "player_driven"
+};
+      </code_pattern>
+    </pattern>
+
+    <pattern name="consequential_choice_system">
+      <description>Every choice has cascading effects on future narrative possibilities</description>
+      <code_pattern>
+// Choices create permanent changes
+function makeChoice(choice) {
+  // Affect relationships
+  relationshipImpact(choice);
+  // Change available future options
+  narrativeBranching(choice);
+  // Evolve character perceptions
+  characterDevelopment(choice);
+}
+      </code_pattern>
+    </pattern>
+  </implementation_patterns>
+
+  <quality_assurance>
+    <test>Does each choice feel personally meaningful and morally complex?</test>
+    <test>Do characters develop naturally based on player interactions?</test>
+    <test>Are adult themes handled with emotional truth rather than exploitation?</test>
+    <test>Can players create genuinely unique narrative experiences?</test>
+    <test>Do the darkest moments serve the emotional depth of the story?</test>
+  </quality_assurance>
+</workflow_instructions>

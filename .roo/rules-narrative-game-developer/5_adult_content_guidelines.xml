@@ -1,0 +1,242 @@
+<adult_content_guidelines>
+  <core_approach>
+    Adult themes should enhance narrative depth and emotional authenticity, not exist for shock value.
+    Every mature element must serve character development, plot progression, or thematic exploration.
+  </core_approach>
+
+  <content_categories>
+    <category name="substance_use_and_addiction">
+      <purpose>
+        Explore how dependency affects judgment, relationships, and self-perception
+        Show recovery as complex process with setbacks and victories
+        Demonstrate how addiction stems from and perpetuates trauma
+      </purpose>
+      <guidelines>
+        <guideline>Show consequences of use beyond immediate highs - show withdrawal, shame, relationship damage</guideline>
+        <guideline>Illustrate how addiction distorts decision-making and self-justification</guideline>
+        <guideline>Portray recovery as ongoing struggle, not sudden triumph</guideline>
+        <guideline>Use first-person experiences rather than clinical descriptions</guideline>
+      </guidelines>
+      <anti_pattern>Sensationalized highs and overdramatized rock-bottom moments</anti_pattern>
+    </category>
+
+    <category name="moderate_substances_and_social_habits">
+      <purpose>
+        Show balanced adult behaviors that enhance life without becoming destructive
+        Demonstrate how most adults enjoy substances recreationally without dependency
+        Illustrate casual habits that support social connections and relaxation
+      </purpose>
+      <guidelines>
+        <guideline>Show casual social drinking that enhances gatherings and relaxation</guideline>
+        <guideline>Illustrate moderate cannabis use for stress relief without disrupting life functioning</guideline>
+        <guideline>Demonstrate occasional indulgences (nice dinners, hobbies) that bring genuine pleasure</guideline>
+        <guideline>Present luxury purchases that create meaningful experiences, not empty status symbols</guideline>
+        <guideline>Use these habits to show personality and social bonding rather than moral failing</guideline>
+      </guidelines>
+      <anti_pattern>Categorizing all substance use as addictive or socially irresponsible</anti_pattern>
+      <realism_note>Reflects real life where most adults enjoy social habits without becoming addicts</realism_note>
+    </category>
+
+    <category name="violence_and_harm">
+      <purpose>
+        Examine cost of violence on both perpetrator and victim psychologically
+        Show violence as human choice with devastating ripple effects through relationships
+        Demonstrate how violence solves nothing but creates new problems
+      </purpose>
+      <guidelines>
+        <guideline>Focus on emotional aftermath rather than graphic details of the act</guideline>
+        <guideline>Show how violence destroys trust and isolates perpetrators</guideline>
+        <guideline>Illustrate victim's perspective showing long-term trauma effects</guideline>
+        <guideline>Demonstrate how violence harms communities, not just individuals</guideline>
+      </guidelines>
+      <anti_pattern>Sensational violence that feels like action movie spectacle</anti_pattern>
+    </category>
+
+    <category name="betrayal_and_deception">
+      <purpose>
+        Explore how lying creates emotional distance and destroys intimacy
+        Show trust as fragile bond that requires constant maintenance
+        Demonstrate how small lies escalate into major deceptions
+      </purpose>
+      <guidelines>
+        <guideline>Present betrayal as heartbreaking emotional experience, not clever tactic</guideline>
+        <guideline>Show gradual erosion of trust through pattern of deceptions</guideline>
+        <guideline>Illustrate victim's perspective of doubting their own memories and judgments</guideline>
+        <guideline>Demonstrate long-term effects on all relationships within social circle</guideline>
+      </guidelines>
+      <anti_pattern>Sophisticated betrayals that feel like clever puzzles winning</anti_pattern>
+    </category>
+
+    <category name="theft_and_crime">
+      <purpose>
+        Examine desperation and rationalization behind illegal acts
+        Show crime as human choice born from legitimate need or flawed reasoning
+        Demonstrate economic systems that pressure people toward crime
+      </purpose>
+      <guidelines>
+        <guideline>Show how theft creates paranoia and destroys all relationships</guideline>
+        <guideline>Illustrate how crime isolates perpetrators from support networks</guideline>
+        <guideline>Demonstrate how initial crime requires escalation to maintain secrecy</guideline>
+        <guideline>Present systemic factors driving individuals toward illegal solutions</guideline>
+      </guidelines>
+      <anti_pattern>Glamorized criminal lifestyle with thrills overriding human cost</anti_pattern>
+    </category>
+
+    <category name="sexual_content">
+      <purpose>
+        Explore intimacy as emotional vulnerability and relational dynamics
+        Show sexuality as expression of power dynamics, affection, or desperation
+        Demonstrate how sexual choices affect emotional bonds
+      </purpose>
+      <guidelines>
+        <guideline>Focus on emotional context and relational impact rather than physical details</guideline>
+        <guideline>Show consensual relationships with complexity and potential for misunderstanding</guideline>
+        <guideline>Illustrate how sexual choices affect trust and future relationships</guideline>
+        <guideline>Demonstrate sexuality as part of characters' full emotional lives</guideline>
+      </guidelines>
+      <anti_pattern>Sexual content for titillation without character or relationship development</anti_pattern>
+    </category>
+
+    <category name="mental_health_struggles">
+      <purpose>
+        Portray mental health challenges as valid human experiences
+        Show treatment as complex journey with setbacks and small victories
+        Demonstrate how untreated struggles affect all relationships
+      </purpose>
+      <guidelines>
+        <guideline>Show mental health as manageable through various approaches, not cured through love</guideline>
+        <guideline>Illustrate how stigma prevents seeking help and isolates suffering individuals</guideline>
+        <guideline>Demonstrate how mental health affects decision-making and relationship dynamics</guideline>
+        <guideline>Present various paths to managing mental health challenges</guideline>
+      </guidelines>
+      <anti_pattern>Romance tropes where love magically cures mental illness</anti_pattern>
+    </category>
+  </content_categories>
+
+  <emotional_authenticity_principles>
+    <principle name="earned_intensity">
+      <description>Build emotional weight through developing authentic relationships before introducing intense moments</description>
+      <benefit>Mature themes hit harder when players care about characters experiencing them</benefit>
+    </principle>
+
+    <principle name="consequential_realism">
+      <description>Show how mature choices create real, lasting consequences in emotional and practical terms</description>
+      <benefit>Prevents mature themes from feeling like temporary plot devices</benefit>
+    </principle>
+
+    <principle name="compassionate_perspective">
+      <description>Present characters with compassion even when their choices are harmful or self-destructive</description>
+      <benefit>Allows players to understand, if not condone, morally complex behaviors</benefit>
+    </principle>
+
+    <principle name="balanced_adulthood">
+      <description>Adult experiences include both destructive and moderate behaviors that reflect real life diversity</description>
+      <implementation>
+        Show casual drinking that enhances social experiences without becoming alcohol abuse
+        Depict moderate substance use that relaxes without becoming compulsive dependency
+        Include occasional indulgences that bring genuine pleasure without guilt or destruction
+        Demonstrate how successful adults balance ambition, relationships, and personal enjoyment
+        Illustrate how everyday habits (routines, pleasures) create meaning alongside major challenges
+      </implementation>
+      <balance_rule>Darkness exists alongside normalcy - destructive behaviors shouldn't dominate moderate ones</balance_rule>
+    </principle>
+  </emotional_authenticity_principles>
+
+  <maturity_warnings>
+    <content_type name="graphic_details">
+      <warning_level>high</warning_level>
+      <recommendation>Focus on emotional/psychological impact rather than vivid physical details</recommendation>
+    </content_type>
+
+    <content_type name="sexual_exploitation">
+      <warning_level>critical</warning_level>
+      <recommendation>All sexual content must serve character development and emotional truth</recommendation>
+    </content_type>
+
+    <content_type name="gratuitous_violence">
+      <warning_level>critical</warning_level>
+      <recommendation>Only include violence that advances understanding of human cost</recommendation>
+    </content_type>
+
+    <content_type name="stigmatizing_portrayals">
+      <warning_level>high</warning_level>
+      <recommendation>Present marginalized populations with depth and dignity</recommendation>
+    </content_type>
+  </maturity_warnings>
+
+  <balancing_techniques>
+    <technique name="contrast_with_hope">
+      <description>Balance dark themes with genuine moments of connection and redemption</description>
+      <benefit>Prevents nihilistic tone while maintaining authentic darkness</benefit>
+    </technique>
+
+    <technique name="earned_resolution">
+      <description>Show that difficult circumstances can lead to growth or understanding, not just suffering</description>
+      <benefit>Acknowledges human resilience without minimizing real struggles</benefit>
+    </technique>
+
+    <technique name="complex_humanity">
+      <description>Show that even harmful people contain capacity for love, compassion, and change</description>
+      <benefit>Encourages empathy over judgment while acknowledging real harm</benefit>
+    </technique>
+  </balancing_techniques>
+
+  <implementation_checklist>
+    <question>Does this mature element advance character understanding or story theme?</question>
+    <question>Is this presented with nuance and human complexity rather than stereotype?</question>
+    <question>Does this serve emotional authenticity rather than sensationalism?</question>
+    <question>Would removing this element diminish the story or character arcs?</question>
+    <question>Does this treat affected characters with dignity and empathy?</question>
+  </implementation_checklist>
+
+  <player_impact_considerations>
+    <consideration name="emotional_burden">
+      <description>Dark narratives can affect players' emotional state after gameplay</description>
+      <guideline>Provide emotional breathing room and evidence that growth is possible</guideline>
+    </consideration>
+
+    <consideration name="content_warnings">
+      <description>Players should know what mature themes to expect</description>
+      <guideline>Clearly communicate potential triggers before story elements are encountered</guideline>
+    </consideration>
+
+    <consideration name="self-care_integration">
+      <description>Great stories can inform personal growth while requiring care</description>
+      <guideline>Acknowledge that intense narratives might need processing time</guideline>
+    </consideration>
+  </player_impact_considerations>
+
+  <common_pitfalls>
+    <pitfall name="shock_without_purpose">
+      <description>Including mature themes just to be "edgy" or "realistic"</description>
+      <solution>Every mature element should serve specific narrative purpose</solution>
+    </pitfall>
+
+    <pitfall name="exploitative_focus">
+      <description>Dwelling on sensational aspects rather than human consequences</description>
+      <solution>Focus on aftermath and emotional impact over graphic details</solution>
+    </pitfall>
+
+    <pitfall name="moralizing_narrative">
+      <description>Using mature themes to deliver preachy "moral lessons"</description>
+      <solution>Allow mature choices to have ambiguous, complex consequences</solution>
+    </pitfall>
+
+    <pitfall name="caricature_victimhood">
+      <description>Presenting characters as purely victims without agency or complexity</description>
+      <solution>Show victims as fully realized people with their own flaws and growth</solution>
+    </pitfall>
+  </common_pitfalls>
+
+  <content_ratings_guidance>
+    <rating name="mature_17+">
+      <includes>Drug use with consequences, complex adult relationships, implied sexual situations, moderate violence</includes>
+      <excludes>Explicit sexual content, graphic violence, extreme language without purpose</excludes>
+    </rating>
+
+    <rating name="adults_only_18+">
+      <includes>All mature elements when handled with authenticity and purpose: explicit content, intense violence, strong language, all dark themes</includes>
+      <excludes>Only content that glorifies harm or sensationalizes victim suffering without purpose</excludes>
+    </rating>
+  </content_ratings_guidance>
+</adult_content_guidelines>

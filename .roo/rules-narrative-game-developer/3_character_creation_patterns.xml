@@ -1,0 +1,275 @@
+<character_creation_patterns>
+  <foundation_principle>
+    Characters should feel like real people you've known - not archetypes or plot devices.
+    Every character needs a lived life that informs their choices, values, and vulnerabilities.
+  </foundation_principle>
+
+  <core_dimensions>
+    <dimension name="psychological_depth">
+      <layers>
+        <layer>Surface identity - who they present to the world</layer>
+        <layer>Core values - what truly drives their decisions</layer>
+        <layer>Hidden wounds - past traumas that influence current behavior</layer>
+        <layer>Secret desires - unacknowledged needs and aspirations</layer>
+        <layer>Breaking point - the line they won't cross (until they do)</layer>
+      </layers>
+      <implementation>
+        Show, don't tell: Reveal psychological depth through actions and dialogue
+        Create internal conflicts that emerge naturally from their lived experience
+      </implementation>
+    </dimension>
+
+    <dimension name="social_context">
+      <aspects>
+        <aspect>Economic reality - how their class/status shapes their opportunities</aspect>
+        <aspect>Cultural background - inherited beliefs and social expectations</aspect>
+        <aspect>Personal relationships - complex web of obligations and affections</aspect>
+        <aspect>Professional identity - how their work shapes who they become</aspect>
+      </aspects>
+    </dimension>
+
+    <dimension name="moral_ambiguity">
+      <characteristics>
+        <characteristic>Conflicting values they genuinely hold</characteristic>
+        <characteristic>Past actions they regret but don't want to acknowledge</characteristic>
+        <characteristic>Excuses they make for their compromises</characteristic>
+        <characteristic>Lines they once swore they'd never cross</characteristic>
+      </characteristics>
+    </dimension>
+  </core_dimensions>
+
+  <character_archetypes>
+    <archetype name="the_survivor">
+      <traits>
+        <trait>Has survived trauma that shaped their worldview</trait>
+        <trait>Distrusts easy solutions and optimistic promises</trait>
+        <trait>Makes pragmatic choices others see as cynical</trait>
+        <trait>Finds it hard to trust or form new bonds</trait>
+      </traits>
+      <development_pattern>Show how past survival strategies now limit their current potential</development_pattern>
+    </archetype>
+
+    <archetype name="the_idealist">
+      <traits>
+        <trait>Believes in fundamental human goodness despite evidence</trait>
+        <trait>Clings to principles that cause practical hardship</trait>
+        <trait>Struggles when their idealism conflicts with loved ones' needs</trait>
+        <trait>Feels personal failure when the world doesn't match their vision</trait>
+      </traits>
+      <development_pattern>Show how repeated disappointments either harden them or force compromise</development_pattern>
+    </archetype>
+
+    <archetype name="the_success_story">
+      <traits>
+        <trait>Achieves career success through consistent effort and smart choices</trait>
+        <trait>Builds lasting relationships through reliability and emotional investment</trait>
+        <trait>Maintains work-life balance despite temptations</trait>
+        <trait>Experiences wealth with gratitude rather than entitlement</trait>
+        <trait>Copes with normal life disappointments (loss, setbacks, betrayals) resiliently</trait>
+      </traits>
+      <development_pattern>Show how success provides new challenges (isolation, inflated expectations, legacy)</development_pattern>
+    </archetype>
+
+    <archetype name="the_everyday_person">
+      <traits>
+        <trait>Manages routine responsibilities with quiet self-discipline</trait>
+        <trait>Finds contentment in small achievements and routine comforts</trait>
+        <trait>Handles relationship challenges with maturity and compromise</trait>
+        <trait>Maintains moderate habits (occasional drinking, social smoking) without addiction</trait>
+        <trait>Celebrates life's ordinary joys while weathering normal disappointments</trait>
+      </traits>
+      <development_pattern>Show how routine discipline creates stability but can lead to unexamined complacency</development_pattern>
+    </archetype>
+
+    <archetype name="the_operator">
+      <traits>
+        <trait>Expert at navigating systems and exploiting opportunities</trait>
+        <trait>Believes relationships are transactional by nature</trait>
+        <trait>Comfortable with morally gray actions if they serve goals</trait>
+        <trait>Struggles with genuine emotional intimacy</trait>
+      </traits>
+      <development_pattern>Show how their efficiency creates emotional isolation</development_pattern>
+    </archetype>
+
+    <archetype name="the_vulnerable_soul">
+      <traits>
+        <trait>Wears their heart on their sleeve with genuine vulnerability</trait>
+        <trait>Easily hurt but equally capable of deep empathy</trait>
+        <trait>Risks more than they should in service of others</trait>
+        <trait>Finds it hard to recognize when they're being taken advantage of</trait>
+      </traits>
+      <development_pattern>Show how repeated vulnerability either strengthens their resilience or leads to harmful patterns</development_pattern>
+    </archetype>
+  </character_archetypes>
+
+  <relationship_dynamics>
+    <pattern name="family_bonds">
+      <complexities>
+        <complex>Unconditional love mixed with resentment and obligation</complex>
+        <complex>Shared history creating unspoken understandings and old wounds</complex>
+        <complex>Family responsibility can feel both anchoring and suffocating</complex>
+      </complexities>
+      <implementation>
+        Family members know each other's weaknesses and use them destructively
+        Shared sacrifices create both connection and simmering resentment
+        Generational patterns show characters repeating or breaking family cycles
+      </implementation>
+    </pattern>
+
+    <pattern name="romantic_connection">
+      <complexities>
+        <complex>What begins as attraction reveals fundamental incompatibilities</complex>
+        <complex>Love inspires both noblest actions and worst compromises</complex>
+        <complex>Intimate bonds create unique opportunities for both healing and hurt</complex>
+      </complexities>
+    </pattern>
+
+    <pattern name="friendship_under_stress">
+      <complexities>
+        <complex>True friendship requires honesty that can destroy relationships</complex>
+        <complex>Supporting others' dreams might require personal sacrifice</complex>
+        <complex>Loyalty creates impossible conflicts during moral crises</complex>
+      </complexities>
+    </pattern>
+  </relationship_dynamics>
+
+  <adult_experience_patterns>
+    <pattern name="addiction_and_dependency">
+      <manifestation>
+        The character believes they can manage their dependency while it manages them
+        Past attempts at sobriety create layers of shame and secretiveness
+        Dependency affects judgment in ways they don't recognize
+        Recovery requires confronting previously avoided aspects of self
+      </manifestation>
+      <character_arc>
+        Recognition of problem → Failed attempts at control → Desperate consequences → Search for help
+      </character_arc>
+    </pattern>
+
+    <pattern name="moral_compromises">
+      <manifestation>
+        Small compromises made for love, security, or opportunity accumulate
+        Character rationalizes unethical actions because "everyone does it"
+        Success comes at the cost of self-respect without immediate consequences
+        Eventually faces reckoning when compromises can no longer be justified
+      </manifestation>
+    </pattern>
+
+    <pattern name="identity_crises">
+      <manifestation>
+        Life changes force confrontation with who you've become versus who you wanted to be
+        Social expectations conflict with authentic desires and needs
+        Cultural or familial expectations limit personal expression
+        Crisis emerges when maintaining false self becomes unsustainable
+      </manifestation>
+    </pattern>
+
+    <pattern name="grief_and_loss">
+      <manifestation>
+        Loss creates permanent change in personality and worldview
+        Unprocessed grief emerges in destructive behavioral patterns
+        Attempts to fill emotional voids with unhealthy coping mechanisms
+        Healing requires confronting avoided pain to find new meaning
+      </manifestation>
+    </pattern>
+  </adult_experience_patterns>
+
+  <character_development_techniques>
+    <technique name="revealed_transformation">
+      <description>Show how external events reveal aspects of character that were always present</description>
+      <example>
+        A kind person reveals selfish tendencies under stress, showing they've always prioritized themselves
+      </example>
+    </technique>
+
+    <technique name="habit_as_identity">
+      <description>Link character's daily habits to their deeper personality and life philosophy</description>
+      <example>
+        Someone who carefully conserves resources might reveal poverty mentality or scarcity worldview
+      </example>
+    </technique>
+
+    <technique name="relationship_history">
+      <description>Use how characters form and maintain relationships to reveal their emotional patterns</description>
+      <example>
+        Someone who always plays the rescuer in relationships might reveal control needs or avoid genuine intimacy
+      </example>
+    </technique>
+  </character_development_techniques>
+
+  <everyday_life_mechanics>
+    <category name="daily_routines">
+      <mechanics>
+        <mechanic>Morning routines: Alarm management, hygiene, breakfast choices</mechanic>
+        <mechanic>Work habits: Punctuality, task completion, work-life balance decisions</mechanic>
+        <mechanic>Health maintenance: Exercise decisions, dietary choices, sleep patterns</mechanic>
+        <mechanic>Social habits: Relationship maintenance, communication patterns, social commitments</mechanic>
+      </mechanics>
+    </category>
+
+    <category name="moderate_adult_behaviors">
+      <behaviors>
+        <behavior>Social drinking that enhances rather than destroys social experiences</behavior>
+        <behavior>Recreational substance use that doesn't interfere with daily functioning</behavior>
+        <behavior>Casual gambling with entertainment value, not compulsion</behavior>
+        <behavior>Occasional indulgence in luxury that brings genuine pleasure</behavior>
+      </behaviors>
+      <consequence_rules>These behaviors shouldn't destroy lives but can accumulate small consequences</consequence_rules>
+    </category>
+
+    <category name="gradual_life_changes">
+      <transitions>
+        <transition>Career advancement through consistent performance</transition>
+        <transition>Relationship deepening through habit and presence</transition>
+        <transition>Personal growth through small consistent choices</transition>
+        <transition>Community building through regular participation</transition>
+      </transitions>
+    </category>
+  </everyday_life_mechanics>
+
+  <character_arc_templates>
+    <arc name="the_awakening">
+      <phases>
+        <phase>Comfortable illusion about self and world</phase>
+        <phase>Cracks appear showing reality doesn't match beliefs</phase>
+        <phase>Confrontation with uncomfortable truths</phase>
+        <phase>Either acceptance and growth or desperate denial</phase>
+      </phases>
+    </arc>
+
+    <arc name="the_corruption">
+      <phases>
+        <phase>Clear moral boundaries protect sense of rightness</phase>
+        <phase>Situations pressure crossing small boundaries</phase>
+        <phase>Justifications make compromises feel acceptable</phase>
+        <phase>Gradual erosion of principles creates unrecognizable self</phase>
+      </phases>
+    </arc>
+
+    <arc name="the_healing">
+      <phases>
+        <phase>Wounds keep character limited and self-protective</phase>
+        <phase>Vulnerability becomes necessary despite fear</phase>
+        <phase>Processing pain allows connection and growth</phase>
+        <phase>Strength emerges from rather than against vulnerability</phase>
+      </phases>
+    </arc>
+
+    <arc name="the_adaptation">
+      <phases>
+        <phase>Fixed self-image and life expectations</phase>
+        <phase>Reality forces confrontation with limitations</phase>
+        <phase>Resistance followed by grudging adjustment</phase>
+        <phase>New possibilities emerge from forced flexibility</phase>
+      </phases>
+    </arc>
+  </character_arc_templates>
+
+  <implementation_guidelines>
+    <guideline>Write character backstories that include specific, personal memories and formative experiences</guideline>
+    <guideline>Create dialogue that reveals character through what they focus on and what they avoid</guideline>
+    <guideline>Show characters making mistakes that stem from their authentic flaws, not plot convenience</guideline>
+    <guideline>Allow characters to change gradually based on their experiences, not suddenly for narrative needs</guideline>
+    <guideline>Use supporting characters to reflect and contrast with main characters' traits and growth</guideline>
+  </implementation_guidelines>
+</character_creation_patterns>
