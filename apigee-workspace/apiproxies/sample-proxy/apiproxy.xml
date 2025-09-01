@@ -1,0 +1,19 @@
+<apigee-workspace>
+  <apiproxies>
+    <sample-proxy>
+      <apiproxy name="sample-proxy">
+        <basePath>/sample-proxy</basePath>
+        <description>This is a sample API proxy configuration.</description>
+        <proxyEndpoints>
+          <proxyEndpoint>default</proxyEndpoint>
+        </proxyEndpoints>
+        <targetEndpoints>
+          <targetEndpoint>default</targetEndpoint>
+        </targetEndpoints>
+        <policies>
+          <policy>sample-policy</policy>
+        </policies>
+      </apiproxy>
+    </sample-proxy>
+  </apiproxies>
+</apigee-workspace>

@@ -1,0 +1,21 @@
+<proxyEndpoints>
+    <PreFlow>
+        <Request>
+            <!-- Add request processing logic here -->
+        </Request>
+        <Response>
+            <!-- Add response processing logic here -->
+        </Response>
+    </PreFlow>
+    <Flows>
+        <!-- Define additional flows here -->
+    </Flows>
+    <PostFlow>
+        <Request>
+            <!-- Add request processing logic here -->
+        </Request>
+        <Response>
+            <!-- Add response processing logic here -->
+        </Response>
+    </PostFlow>
+</proxyEndpoints>

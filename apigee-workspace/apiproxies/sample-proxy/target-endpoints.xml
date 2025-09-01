@@ -1,0 +1,7 @@
+<target-endpoints>
+    <TargetEndpoint name="default">
+        <HTTPTargetConnection>
+            <URL>http://example.com/api</URL>
+        </HTTPTargetConnection>
+    </TargetEndpoint>
+</target-endpoints>

@@ -1,0 +1,17 @@
+<sharedflow>
+    <name>sample-sharedflow</name>
+    <description>This is a sample shared flow configuration.</description>
+    <flow>
+        <name>SampleFlow</name>
+        <request>
+            <step>
+                <name>SamplePolicy</name>
+            </step>
+        </request>
+        <response>
+            <step>
+                <name>SamplePolicy</name>
+            </step>
+        </response>
+    </flow>
+</sharedflow>

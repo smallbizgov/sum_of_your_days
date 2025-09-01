@@ -1,0 +1,8 @@
+<policy>
+    <Name>SamplePolicy</Name>
+    <Type>SomePolicyType</Type>
+    <Description>This is a sample policy configuration.</Description>
+    <Properties>
+        <Property name="exampleProperty">exampleValue</Property>
+    </Properties>
+</policy>

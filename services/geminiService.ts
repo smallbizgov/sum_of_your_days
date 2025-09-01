@@ -1,11 +1,7 @@
-import { GoogleGenAI, Type } from "@google/genai";
+import { Type } from "@google/genai";
 import { Character, CharacterStats, Choice, GeminiResponse, LegacyContext, HealthCondition } from '../types';
 
-if (!process.env.API_KEY) {
-  throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const API_BASE = window?.location?.origin || '';
 
 const systemInstruction = `
 You are a text-based life simulation game master. Your goal is to create a branching, dynamic, and realistic life story for the user. Your narrative style is deeply immersive, written from a first-person perspective, focusing on the character's internal thoughts and feelings. You will manage ALL aspects of the character's state.
@@ -234,24 +230,33 @@ const generatePrompt = (context: string, randomEventNarrative?: string, worldEve
 
 export const getNextStorySegment = async (context: string, randomEventNarrative?: string, worldEventNarrative?: string): Promise<GeminiResponse> => {
   try {
-    const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+    const body = {
       contents: generatePrompt(context, randomEventNarrative, worldEventNarrative),
       config: {
-        systemInstruction: systemInstruction,
+        systemInstruction,
         responseMimeType: "application/json",
-        responseSchema: responseSchema,
+        responseSchema,
         temperature: 0.9,
-      },
+        model: 'gemini-2.5-flash'
+      }
+    };
+
+    const resp = await fetch(`${API_BASE}/api/next-segment`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
     });
 
-    const jsonText = response.text.trim();
-    const data = JSON.parse(jsonText) as GeminiResponse;
-    return data;
+    const data = await resp.json();
+
+    // The server returns the raw GenAI response object; attempt to extract text
+    const text = data?.candidates?.[0]?.content?.text || data?.text || JSON.stringify(data);
+    const jsonText = text.trim();
+    const parsed = JSON.parse(jsonText) as GeminiResponse;
+    return parsed;
 
   } catch (error) {
-    console.error("Error fetching story segment from Gemini:", error);
-    // Create a fallback error response
+    console.error("Error fetching story segment via proxy:", error);
     const fallbackFinances = { checking: 0, savings: 0, income: 0, expenses: 0, netWorth: 0 };
     const fallbackSkills = { fitness: 0, intelligence: 0, charisma: 0 };
     const fallbackTime = { day: 1, hour: 8, minute: 0, dayOfWeek: 'Monday' };
@@ -289,19 +294,27 @@ export const generateWorldEvent = async (character: Character): Promise<{narrati
     5.  You MUST return the sources you used for your research.
     `;
     try {
-        const response = await ai.models.generateContent({
-          model: "gemini-2.5-flash",
-          contents: `Generate a major world event for a character in the year ${character.worldState.currentYear} living in ${character.location}.`,
-          config: {
-            systemInstruction: worldEventSystemInstruction,
-            temperature: 1.0, 
-            tools: [{googleSearch: {}}],
-          },
-        });
-        const groundingMetadata = response.candidates?.[0]?.groundingMetadata;
-        const sources = groundingMetadata?.groundingChunks?.map(chunk => chunk.web) || [];
-        
-        let jsonText = response.text.trim();
+    const body = {
+      contents: `Generate a major world event for a character in the year ${character.worldState.currentYear} living in ${character.location}.`,
+      config: {
+        systemInstruction: worldEventSystemInstruction,
+        temperature: 1.0,
+        tools: [{ googleSearch: {} }],
+        model: 'gemini-2.5-flash'
+      }
+    };
+
+    const resp = await fetch(`${API_BASE}/api/next-segment`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+
+    const response = await resp.json();
+    const groundingMetadata = response?.candidates?.[0]?.groundingMetadata;
+    const sources = groundingMetadata?.groundingChunks?.map((chunk: any) => chunk.web) || [];
+
+    let jsonText = (response?.candidates?.[0]?.content?.text || response?.text || JSON.stringify(response)).trim();
         if (jsonText.startsWith('```json')) {
             jsonText = jsonText.substring(7, jsonText.length - 3).trim();
         } else if (jsonText.startsWith('```')) {
@@ -372,21 +385,27 @@ export const createCharacterAndStory = async (legacyContext?: LegacyContext): Pr
     }
 
     try {
-        const response = await ai.models.generateContent({
-          model: "gemini-2.5-flash",
-          contents: "Create the initial character and starting scenario.",
-          config: config,
-        });
-    
-        let jsonText = response.text.trim();
-        if (useGoogleSearch) {
-            if (jsonText.startsWith('```json')) {
-                jsonText = jsonText.substring(7, jsonText.length - 3).trim();
-            } else if (jsonText.startsWith('```')) {
-                jsonText = jsonText.substring(3, jsonText.length - 3).trim();
-            }
-        }
-        return JSON.parse(jsonText) as GeminiResponse;
+    const body = {
+      contents: "Create the initial character and starting scenario.",
+      config: config,
+    };
+
+    const resp = await fetch(`${API_BASE}/api/create-character`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+
+    const response = await resp.json();
+    let jsonText = (response?.candidates?.[0]?.content?.text || response?.text || JSON.stringify(response)).trim();
+    if (useGoogleSearch) {
+      if (jsonText.startsWith('```json')) {
+        jsonText = jsonText.substring(7, jsonText.length - 3).trim();
+      } else if (jsonText.startsWith('```')) {
+        jsonText = jsonText.substring(3, jsonText.length - 3).trim();
+      }
+    }
+    return JSON.parse(jsonText) as GeminiResponse;
     
       } catch (error) {
         console.error("Error creating initial character from Gemini:", error);
@@ -430,21 +449,23 @@ Location: ${character.location}.
 Scene: ${thirdPersonNarrative}.
 Style: cinematic, evocative, slightly stylized realism, moody lighting.`;
 
-    const response = await ai.models.generateImages({
-        model: 'imagen-4.0-generate-001',
-        prompt: imagePrompt,
-        config: {
-          numberOfImages: 1,
-          outputMimeType: 'image/jpeg',
-          aspectRatio: '16:9',
-        },
-    });
+    // Send prompt to server proxy which will call the image generation API.
+    try {
+      const resp = await fetch(`${API_BASE}/api/generate-image`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt: imagePrompt }),
+      });
 
-    if (response.generatedImages && response.generatedImages.length > 0) {
-      const base64ImageBytes = response.generatedImages[0].image.imageBytes;
-      return `data:image/jpeg;base64,${base64ImageBytes}`;
+      if (resp.status === 204) return null;
+      const data = await resp.json();
+      // Expecting { imageBase64: string }
+      if (data && data.imageBase64) return `data:image/jpeg;base64,${data.imageBase64}`;
+      return null;
+    } catch (err) {
+      console.error('Image generation proxy error:', err);
+      return null;
     }
-    return null;
 
   } catch (error) {
     console.error("Error generating image:", error);
